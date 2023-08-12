@@ -29,7 +29,6 @@ main {
 }
 
 .undraggable {
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -37,5 +36,11 @@ main {
   -ms-user-select: none;
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
 
+*:focus {
+  outline: none;
+}
 

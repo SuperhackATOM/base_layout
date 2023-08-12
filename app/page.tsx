@@ -1,9 +1,9 @@
 import styles from './page.module.scss'
+import {Button} from "@/components/Button/Button";
+import {Attest} from "@/components/Attest/Attest";
 
 export default function Home() {
   return (
-    <div className={styles.main}>
-     Home
-    </div>
+    <Attest/>
   )
 }

@@ -6,13 +6,14 @@ import {Navigation} from "@/components/Navigation/Navigation";
 import attest from "@/assets/attest.svg";
 import graph from "@/assets/graph.svg";
 import connections from "@/assets/connections.svg";
+import {Button} from "@/components/Button/Button";
 
 const Header = () => {
 
     const navLinks = [
         { label: "Attest meet", href: "/", img: attest},
         { label: "My connections", href: "/connections", img: connections},
-        { label: "Social graph", href: "/graph", img: attest}
+        { label: "Social graph", href: "/graph", img: graph}
     ]
 
     return (
@@ -34,7 +35,7 @@ const Header = () => {
             <div className={styles.middleMenu}>
                 <Navigation navLinks={navLinks}/>
             </div>
-            <button className={styles.address}>0x8675*****a8f2</button>
+            <Button text={"0x8675*****a8f2"}/>
         </header>
 )
 }
